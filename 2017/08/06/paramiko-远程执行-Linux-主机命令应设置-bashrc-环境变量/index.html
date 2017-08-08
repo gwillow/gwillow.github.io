@@ -101,15 +101,15 @@
 <meta property="og:url" content="http://yoursite.com/2017/08/06/paramiko-远程执行-Linux-主机命令应设置-bashrc-环境变量/index.html">
 <meta property="og:site_name" content="Hexo">
 <meta property="og:description" content="​        经常使用paramiko远程管理Linux主机及其上应用的同学，也许遇到过明明在远程主机上执行命令正常 但放到python中却不能正常调用，一般此类问题多为环境变量没有设置或设置不正确导致。 ​        paramiko 远程管理主机时默认调用的环境变量为~/.bashrc而不是~/.bash_profile，下面以检查远程主机 上的OGG 进程状态为例，说明如下：  直接">
-<meta property="og:image" content="https://github.com/gwillow/gwillow.github.io/blob/master/image/ogg_1.png">
-<meta property="og:image" content="https://github.com/gwillow/gwillow.github.io/blob/master/image/ogg_2.png">
-<meta property="og:image" content="https://github.com/gwillow/gwillow.github.io/blob/master/image/ogg_3.png">
-<meta property="og:image" content="https://github.com/gwillow/gwillow.github.io/blob/master/image/ogg_4.png">
-<meta property="og:updated_time" content="2017-08-08T08:48:36.944Z">
+<meta property="og:image" content="http://yoursite.com/2017/08/06/paramiko-远程执行-Linux-主机命令应设置-bashrc-环境变量/ogg_1.png">
+<meta property="og:image" content="http://yoursite.com/2017/08/06/paramiko-远程执行-Linux-主机命令应设置-bashrc-环境变量/ogg_2.png">
+<meta property="og:image" content="http://yoursite.com/2017/08/06/paramiko-远程执行-Linux-主机命令应设置-bashrc-环境变量/ogg_3.png">
+<meta property="og:image" content="http://yoursite.com/2017/08/06/paramiko-远程执行-Linux-主机命令应设置-bashrc-环境变量/ogg_4.png">
+<meta property="og:updated_time" content="2017-08-08T09:12:55.666Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="paramiko 远程执行 Linux 主机命令应设置 .bashrc 环境变量">
 <meta name="twitter:description" content="​        经常使用paramiko远程管理Linux主机及其上应用的同学，也许遇到过明明在远程主机上执行命令正常 但放到python中却不能正常调用，一般此类问题多为环境变量没有设置或设置不正确导致。 ​        paramiko 远程管理主机时默认调用的环境变量为~/.bashrc而不是~/.bash_profile，下面以检查远程主机 上的OGG 进程状态为例，说明如下：  直接">
-<meta name="twitter:image" content="https://github.com/gwillow/gwillow.github.io/blob/master/image/ogg_1.png">
+<meta name="twitter:image" content="http://yoursite.com/2017/08/06/paramiko-远程执行-Linux-主机命令应设置-bashrc-环境变量/ogg_1.png">
 
 
 
@@ -210,7 +210,7 @@
             
               <i class="menu-item-icon fa fa-fw fa-home"></i> <br />
             
-            Startseite
+            Home
           </a>
         </li>
       
@@ -220,7 +220,7 @@
             
               <i class="menu-item-icon fa fa-fw fa-archive"></i> <br />
             
-            Archiv
+            Archives
           </a>
         </li>
       
@@ -294,7 +294,7 @@
                 <i class="fa fa-calendar-o"></i>
               </span>
               
-                <span class="post-meta-item-text">Veröffentlicht am</span>
+                <span class="post-meta-item-text">Posted on</span>
               
               <time title="Post created" itemprop="dateCreated datePublished" datetime="2017-08-06T16:39:04+08:00">
                 2017-08-06
@@ -339,16 +339,14 @@
 <p>​        paramiko 远程管理主机时默认调用的环境变量为~/.bashrc而不是~/.bash_profile，下面以检查远程主机</p>
 <p>上的OGG 进程状态为例，说明如下：</p>
 <ol>
-<li><p>直接登录远程主机上可正常执行</p>
-<p><img src="https://github.com/gwillow/gwillow.github.io/blob/master/image/ogg_1.png" alt="ogg_1"></p>
+<li><p>直接登录远程主机上可正常执行<img src="/2017/08/06/paramiko-远程执行-Linux-主机命令应设置-bashrc-环境变量/ogg_1.png" alt="ogg_1"></p>
 </li>
 <li><p>Python 远程执行报错，提示找不到库文件</p>
-<p><img src="https://github.com/gwillow/gwillow.github.io/blob/master/image/ogg_2.png" alt="ogg_2"></p>
+<p><img src="/2017/08/06/paramiko-远程执行-Linux-主机命令应设置-bashrc-环境变量/ogg_2.png" alt="ogg_2"></p>
 </li>
-<li><p>远程主机设置用户非交互环境变量.bashrc （<strong>不是设置.bash_profile</strong>）后Python执行正常</p>
-<p><img src="https://github.com/gwillow/gwillow.github.io/blob/master/image/ogg_3.png" alt="ogg_3"></p>
+<li><p>远程主机设置用户非交互环境变量.bashrc （<strong>不是设置.bash_profile</strong>）后Python执行正常<img src="/2017/08/06/paramiko-远程执行-Linux-主机命令应设置-bashrc-环境变量/ogg_3.png" alt="ogg_3"></p>
 <p>Python执行能正常取回结果如下：</p>
-<p><img src="https://github.com/gwillow/gwillow.github.io/blob/master/image/ogg_4.png" alt="ogg_4"></p>
+<p><img src="/2017/08/06/paramiko-远程执行-Linux-主机命令应设置-bashrc-环境变量/ogg_4.png" alt="ogg_4"></p>
 <p>​    </p>
 </li>
 <li><p>示例代码如下</p>
@@ -462,7 +460,7 @@
             <div class="site-state-item site-state-posts">
               <a href="/archives/">
                 <span class="site-state-item-count">2</span>
-                <span class="site-state-item-name">Artikel</span>
+                <span class="site-state-item-name">posts</span>
               </a>
             </div>
           
@@ -475,7 +473,7 @@
             <div class="site-state-item site-state-tags">
               
                 <span class="site-state-item-count">1</span>
-                <span class="site-state-item-name">Tags</span>
+                <span class="site-state-item-name">tags</span>
               
             </div>
           
@@ -525,7 +523,7 @@
 
 
 <div class="powered-by">
-  Erstellt mit  <a class="theme-link" href="https://hexo.io">Hexo</a>
+  Powered by <a class="theme-link" href="https://hexo.io">Hexo</a>
 </div>
 
 <div class="theme-info">
